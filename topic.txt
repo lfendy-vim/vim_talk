@@ -1,0 +1,64 @@
+VIM 7.3
+- notable updates (persistent undo)
+
+VIM 7.4
+- notable updates
+- faster regex
+
+VIM 8.0
+- notable updates: Asynchronous I/O, jobs, lambdas
+- tests
+
+UNDOs
+- persistent undos
+
+TAGs
+
+Alternate files
+
+minivim (when stuck with vi, or non-customised vim)
+- modify .vimrc with things you can't live without
+- syntax, line number
+
+editting large files
+- how to disable stuff to make it easier / more efficient to load large files
+
+macros
+
+q:
+- what it is
+- where to find out more info
+- how to use it (command history with full vim editting capability)
+
+shell out
+- std in redirection
+- std out redirection to vim
+
+registers
+- x paste buffer
+functions
+
+use of 'references' in command
+(VIM command mode)
+
+column select
+
+substitution
+- use OTHER characters for substitution
+- regex grouping
+- use &
+
+
+Scenarios
+- I accidentally typed q:, wtf?
+- I'm typing really long commands in the :, I wish I can edit it in VIM
+- I want to have a look at the different versions of this file since I last edit
+-- or. I accidentally quit vim while editting, now I want to undo
+- I want to pass my (json, xml, html) through a 'tidy' application
+- I want to UPcase all the xml tags i.e. <div> to <DIV>
+- I want to insert something at the beginning of every line (3rd char of every line)
+- I want to translate my file
+- I need to edit 5GB file
+
+
+

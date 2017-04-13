@@ -59,6 +59,4 @@ Scenarios
 - I want to insert something at the beginning of every line (3rd char of every line)
 - I want to translate my file
 - I need to edit 5GB file
-
-
-
+- I edited a file, but I need to save it with root

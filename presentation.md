@@ -5,26 +5,12 @@ Do you even vim, brah?
 
 # Pre-requisites
 
-- git clone
+- ssh
+- connect to the network
 
 ```shell
-  git clone https://github.com/lfendy-vim/become-a-vimja.git
+  ssh vimuser@10.0.0.10
 ```
-
-- Vim 8.0 with no plugins
-
-```shell
-  mv ~/.vim ~/.vim_bak
-  mv ~/.vimc~/.vimrc_bak
-```
-
-- or through docker
-
-```shell
-  docker pull rmohta/alpine-vim8:base
-  docker run -it -v `pwd`:/app rmohta/alpine-vim8:base vim /app
-```
-
 
 # Agenda:
 
@@ -34,6 +20,8 @@ Do you even vim, brah?
 
 
 # Start with something easy:
+
+## Save something in sudo immediately
 
 ## Line comment a bunch of code
 
@@ -76,5 +64,6 @@ ggqqwve~j^q25@q
 ```
 
 ## Upcase the second word of every sentence
+
 
 

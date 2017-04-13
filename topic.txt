@@ -12,12 +12,13 @@ VIM 8.0
 UNDOs
 - persistent undos
 
+NAVIGATION
+Alternate files
+go to file
 TAGs
 
-Alternate files
-
 minivim (when stuck with vi, or non-customised vim)
-- modify .vimrc with things you can't live without
+- modify .virc or .vimrc with things you can't live without
 - syntax, line number
 
 editting large files

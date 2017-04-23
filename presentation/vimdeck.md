@@ -1,5 +1,6 @@
 # Become a Vim-ja
 ## Team Hug OZ 2017
+```markdown
                                             ..
                                           .::::.
                              ___________ :;;;;:`____________
@@ -18,7 +19,10 @@
                                |88Z'    "DNNNNNNN"
                                '"'        "MMMM"
                                             ""
-# All you need in VIM
+```
+
+## All you need is VIM
+
 By Liauw Fendy and Aaron Edwards
 
 
@@ -28,4 +32,58 @@ By Liauw Fendy and Aaron Edwards
 - Vim-ja accelerate (Handle scenarios lyk a Baus)
 - Vim-ja formulate  (Macros)
 - Vim-ja navigate   (Learn teleportation)
+
+
+# Ancient Scroll # 1: Meditation
+## Setup your machine
+
+Browse http://vimuser:vimuser@10.0.0.4:1337/
+
+```sh
+ssh vimuser@10.0.0.5
+```
+
+
+# Ancient Scroll # 1: Meditation
+Some sane defaults (normal)
+
+```sh
+vim ./sanevimrc
+set nocompat
+set number
+set syntax=on
+set undodir=/tmp/
+set hlsearch
+
+vim -u ./sanevimrc a_config_file.cfg
+```
+
+
+# Ancient Scroll # 1: Meditation
+Same sane defaults (large files)
+
+```sh
+vim ./minvimrc
+
+set eventignore+=FileType
+ " save memory when other file is viewed
+setlocal bufhidden=unload
+ " is read-only (write with :w new_filename)
+setlocal buftype=nowrite
+ " no undo possible
+setlocal undolevels=-1
+ " display message
+
+vim -u ./minvimrc a_huge_file.log
+```
+
+
+# Ancient Scroll # 2: Acceleration
+Save file using sudo
+
+```sh
+vim rootfile.txt
+:w 
+```
+
 

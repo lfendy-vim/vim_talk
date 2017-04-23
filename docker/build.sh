@@ -1,1 +1,1 @@
-docker build -t lfendy/vim .
+docker build -t lfendy/vim_talk .

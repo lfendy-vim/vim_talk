@@ -39,7 +39,7 @@
 - name: copy dockershell.sh to /bin/dockershell.sh
   copy: src=dockershell.sh dest=/bin/dockershell.sh owner=root group=root mode=0555
 - name: pull docker image
-  shell: docker pull lfendy/vim
+  shell: docker pull lfendy/vim_talk
 - name: Add vimuser user
   user:
     name: vimuser

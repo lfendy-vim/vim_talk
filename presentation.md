@@ -1,3 +1,45 @@
+# Title
+
+# Agenda
+
+# How to
+
+visit: http://vimuser:vimuser@127.0.0.1:1337/
+ssh vimuser@127.0.0.1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Become a Vim-ja
 
 Do you even vim, brah?

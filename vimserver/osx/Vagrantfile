@@ -1,0 +1,40 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+  config.vm.box = "boxcutter/ubuntu1604-desktop"
+
+  # Disable automatic box update checking. If you disable this, then
+  # boxes will only be checked for updates when the user runs
+  # `vagrant box outdated`. This is not recommended.
+  # config.vm.box_check_update = false
+
+  # Create a forwarded port mapping which allows access to a specific port
+  # within the machine from a port on the host machine. In the example below,
+  # accessing "localhost:8080" will access port 80 on the guest machine.
+  # config.vm.network "forwarded_port", guest: 80, host: 8080
+
+  config.ssh.forward_agent = true
+
+  config.vm.synced_folder '..', '/vagrant'
+
+  config.vm.network "public_network", bridge: "en8: AX88x72A"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.name = "vimserver"
+    vb.gui = true
+    vb.cpus = 4
+    vb.memory = "8192"
+  end
+
+
+  config.vm.provision "ansible_local" do |ansible|
+    ansible.playbook = "osx/provision.yml"
+    ansible.inventory_path = 'osx/hosts'
+    ansible.limit          = 'all' # can also be limited to 'node' from inventory
+    ansible.verbose        = true
+    ansible.install        = true
+  end
+
+
+end

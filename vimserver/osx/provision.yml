@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  user: vagrant
+  roles:
+    - name: common
+  handlers:
+    - name: update timezone
+      command: dpkg-reconfigure --frontend noninteractive tzdata

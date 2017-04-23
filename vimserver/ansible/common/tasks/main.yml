@@ -1,0 +1,76 @@
+---
+- name: Install apt transport and certs
+  apt:
+    pkg: "{{ item }}"
+    state: latest
+    update_cache: yes
+    cache_valid_time: 6000
+  with_items:
+    - apt-transport-https
+    - ca-certificates
+- name: Install latest kernel for Ubuntu
+  apt:
+    pkg: "{{ item }}"
+    state: latest
+    update_cache: yes
+    cache_valid_time: 6000
+  with_items:
+    - "linux-image-extra-{{ ansible_kernel }}"
+    - linux-image-extra-virtual
+- name: Add Docker repository key
+  apt_key:
+    id: "58118E89F3A912897C070ADBF76221572C52609D"
+    keyserver: "hkp://p80.pool.sks-keyservers.net:80"
+    state: present
+  register: add_repository_key
+  ignore_errors: true
+- name: Add Docker repository and update apt cache
+  apt_repository:
+    repo: "deb https://apt.dockerproject.org/repo {{ ansible_lsb.id|lower }}-{{ ansible_lsb.codename|lower }} main"
+    mode: '644'
+    update_cache: yes
+    state: present
+- name: Install (or update) docker package
+  apt:
+    name: docker-engine
+    state: latest
+    update_cache: yes
+    cache_valid_time: 6000
+- name: copy dockershell.sh to /bin/dockershell.sh
+  copy: src=dockershell.sh dest=/bin/dockershell.sh owner=root group=root mode=0555
+- name: pull docker image
+  shell: docker pull lfendy/vim
+- name: Add vimuser user
+  user:
+    name: vimuser
+    shell: /bin/dockershell.sh
+    groups: users,sudo,docker
+    append: yes
+    password: $6$k26mLffO2.$1kxFPWeEcGAiR2Vj8JJJT5PEJy70EajeIyZd6ZQM4wH8JL.8r/b.QE4FXzs72bzjhkJa8Ruei7loDp14.7X.n0
+- name: Add users to the docker group
+  user:
+    name:   "{{ item }}"
+    groups: docker
+    append: yes
+  with_items:
+    - vagrant
+- name: Install dev tools
+  apt:
+    pkg: "{{ item }}"
+    state: latest
+  with_items:
+    - vim
+    - tmux
+    - terminator
+    - whois
+- name: Uninstall uneeded tools
+  apt:
+    pkg: gnome-terminal
+    state: absent
+- name: Set timezone with symlink
+  file: src=/usr/share/zoneinfo/Australia/Melbourne
+        path=/etc/localtime
+        state=link
+        force=yes
+  notify:
+    - update timezone

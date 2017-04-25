@@ -114,3 +114,19 @@ ggqqwve~j^q25@q
 ggqqwve~)q25@q
 ```
 
+##Sort all the words in a file and filter out duplicates
+```
+:% !sort -u
+```
+
+##Sort sentences
+```
+%s/\.\s*/\r/g | %! sort
+```
+
+## Pass Json file through an external 'tidy' program (eg python -m json.tool)
+```
+:%! python -m json.tool
+```
+
+

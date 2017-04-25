@@ -106,6 +106,11 @@ ggqqwve~j^q25@q
 ```
 
 ## Upcase the second word of every sentence
+```
+# Regex
+:%s/\(^\|\.\s*\)\(\w\+ \)\(\w\+\)/\1\2\U\3/g
 
-
+#Macro
+ggqqwve~)q25@q
+```
 

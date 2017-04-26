@@ -129,6 +129,20 @@ a = add2num(2,3)
 ```
 
 
+# Ancient Scroll # 2: Acceleration
+Try something easy:
+
+line comment 0010_line_comment_this.rb
+
+
+# Ancient Scroll # 2: Acceleration
+Try something easy:
+
+line comment 0010_line_comment_this.rb
+- can use :x,ys/^/#/
+- can use <C-v>
+
+
 # Ancient Scroll # 3: Automation
 
 
@@ -142,4 +156,8 @@ ctags -R *
 
 
 # Acient Scroll # 4: Navigation
-Alternate files
+Using cscope (starscope)
+
+
+
+

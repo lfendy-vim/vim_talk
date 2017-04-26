@@ -1,0 +1,10 @@
+function s:AllowCodi()
+   if empty(glob('/tmp/cmd'))
+       call system('touch /tmp/cmd')
+   endif
+
+   call system('chmod u+x /tmp/cmd')
+endfunction
+autocmd VimEnter * call s:AllowCodi()
+
+syntax on

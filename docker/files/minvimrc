@@ -1,0 +1,4 @@
+set eventignore+=FileType
+setlocal bufhidden=unload
+setlocal buftype=nowrite
+setlocal undolevels=-1

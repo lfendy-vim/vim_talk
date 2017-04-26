@@ -1,0 +1,6 @@
+set nocompatible
+set number
+syntax on
+set undofile
+set undodir=/tmp/
+set hlsearch

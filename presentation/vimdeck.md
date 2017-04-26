@@ -43,19 +43,26 @@ Browse http://vimuser:vimuser@10.0.0.4:1337/
 ssh vimuser@10.0.0.5
 ```
 
+or
+
+```sh
+docker pull lfendy/vim_talk     # this will take a Loooong time
+```
+
 
 # Ancient Scroll # 1: Meditation
 Some sane defaults (normal)
 
 ```sh
 vim ./sanevimrc
-set nocompat
+set nocompatible
 set number
-set syntax=on
+syntax on
+set undofile
 set undodir=/tmp/
 set hlsearch
 
-vim -u ./sanevimrc a_config_file.cfg
+vim -u ~/sample/sanevimrc ~/sample/httpd.conf
 ```
 
 
@@ -76,7 +83,18 @@ setlocal buftype=nowrite
 " no undo possible
 setlocal undolevels=-1
 
-vim -u ./minvimrc a_huge_file.log
+bash < createlargefile.sh
+time vim -u ~/sample/sanevimrc ~/sample/largefile.txt -c ":q"
+time vim -u ~/sample/minvimrc ~/sample/largefile.txt -c ":q"
+```
+
+
+# Ancient Scroll # 1: Meditation
+native packages...
+
+```sh
+.vim/pack/pluginGroup/start/zzz
+.vim/pack/pluginGroup/opt/yyy
 ```
 
 
@@ -84,15 +102,34 @@ vim -u ./minvimrc a_huge_file.log
 Save file using sudo
 
 ```sh
-vim rootfile.txt
+vim ~/sample/root_owned_file.conf
 :w !sudo tee %
 ```
 
 
+# Ancient Scroll # 2: Acceleration
+The ungodly :W
+
+```sh
+:cnoreabbrev W w
+```
+
+
+# Ancient Scroll # 2: Acceleration
+Vim 8 async job and channels demo (Codi) - live repl
+
+```sh
+vim test.rb
+
+def add2num(x,y)
+  x + y
+end
+a = add2num(2,3)
+:Codi ruby
+```
+
+
 # Ancient Scroll # 3: Automation
-
-
-
 
 
 # Ancient Scroll # 4: Navigation

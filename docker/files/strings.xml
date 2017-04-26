@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fireballs In The Sky</string>
+    <string name="title_main">Fireballs</string>
+    <string name="title_main_in_app">Fireballs Home</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_star_maps">Star Map</string>
+    <string name="title_activity_shower">Meteor Shower</string>
+    <string name="title_major_showers">Major</string>
+    <string name="title_minor_showers">Minor</string>
+    <string name="title_all_showers">All</string>
+    <string name="title_about">About</string>
+    <string name="title_partners">Collaborators &amp; Partners</string>
+    <string name="title_terms">Terms &amp; Conditions</string>
+    <string name="title_announcements">What\'s Happening</string>
+    <string name="title_activity_showers">Meteor Showers</string>
+    <string name="title_gallery">Gallery</string>
+    <string name="title_start_report">Start Position</string>
+    <string name="title_end_report">End Position</string>
+    <string name="title_report_details">Describe Fireball</string>
+    <string name="title_report_review_activity">Review</string>
+    <string name="title_picture"></string>
+    <string name="title_my_sightings">My Sightings</string>
+    <string name="title_recent_sightings">Recent Sightings</string>
+    <string name="title_sightings_activity">Sightings</string>
+    <string name="title_sighting_details_activity">Sighting Details</string>
+    <string name="title_activity_splash_screen">Fireballs</string>
+    <string name="title_activity_thanks">Thanks</string>
+    <string name="picture_error_loading_message">Unable to load pictures</string>
+    <string name="announcement_error_loading_message">Unable to load announcements</string>
+    <string name="sighting_error_loading_message">Unable to load sightings</string>
+    <string name="no_pictures">No Pictures</string>
+    <string name="no_announcements">No Announcements</string>
+    <string name="no_sightings">No Sightings</string>
+    <string name="main_latest_picture">Latest Picture</string>
+    <string name="main_report">Report a Sighting</string>
+    <string name="bogan_ipsum">Shazza got us some cubby house no worries get a dog up ya ford.
+        Gutful of cubby house to as stands out like cleanskin. As cunning as a corker where lets
+        throw a butcher. Flat out like a kindie mate come a billy. Trent from punchy spag bol
+        with as dry as a oldies. \n\nGrab us a freo bloody get a dog up ya banana bender. As busy
+        as a gone walkabout my as cross as a ankle biter. Lets get some boogie board when mad
+        as a trackies. As cunning as a hooroo where come a franger. As busy as a not my bowl
+        of rice bloody ankle biter. We\'re going spit the dummy mate he hasn\'t got a shonky. As
+        dry as a donger with she\'ll be right rip snorter.</string>
+    <string name="title_colour">Colour</string>
+    <string name="title_fragmentation">Fragmentation</string>
+    <string name="title_brightness">Brightness</string>
+    <string name="title_shape">Shape</string>
+    <string name="title_duration">Duration</string>
+    <string name="title_announcement"></string>
+    <string name="title_shower"></string>
+    <string name="waiting_for_location">Waiting for location</string>
+    <string name="sighting_saving_message">Submitting sighting(s)</string>
+    <string name="sighting_upload_success">Sighting successfully submitted</string>
+    <string name="sighting_upload_failure">Unable to submit sighting</string>
+    <string name="sightings_upload_success">Sightings successfully submitted</string>
+    <string name="sightings_upload_failure">Unable to submit sightings</string>
+    <string name="title_activity_tutorial">Tutorial</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="sensor_missing_title">Required Sensors Unavailable</string>
+    <string name="missing_sensors_message">Fireballs In The Sky requires an accelerometer and
+        compass to report a sighting.</string>
+    <string name="design_a_fireball_question">Would you like to design a fireball anyway?</string>
+    <string name="missing_gps_message">Fireballs In The Sky requires GPS to report a sighting.</string>
+    <string name="enable_gps_question">Would you like to enable GPS?</string>
+    <string name="title_capture_sound">Sound</string>
+    <string name="tutorial_start">Hold your phone as if you are taking a photo, point it at the sky where you first saw the fireball and tap the screen</string>
+    <string name="tutorial_end">Hold your phone as if you are taking a photo, point it at the sky where you last saw the fireball and tap the screen</string>
+    <string name="tutorial_describe">Use the tabs at the top of the screen to describe the duration, shape, brightness, colour and fragmentation of the fireball. As you add more information, you will build an animated recreation of the fireball you saw. Don\'t worry if you can\'t get the description exact, just choose the best option. You can go back and forward between the tabs to change the description if you need to.</string>
+    <string name="tutorial_sound">It may take a couple of minutes for the sound to reach you. \n\nIf you hear a sonic boom while completing your report, hit the ear button above as quickly as you can - we will record the time it reached you.</string>
+    <string name="sonic_boom_title">Just heard a sonic boom?</string>
+    <string name="sonic_boom_message">Do you want to record that you heard a sound and the current time (approx. %s) on your sighting report?</string>
+    <string name="thanks_title">We greatly appreciate you taking the time to report these beautiful fireball events</string>
+    <string name="thanks_message1">If someone else reports the same one we\'ll let you know that it has been corroborated. If we get several reports we’ll be able to triangulate it, and give you additional details on where it came from in the solar system. And if the fireball was caught by one of our Desert Fireball Observatories, we\’ll point you to an image of the event on our website.</string>
+    <string name="thanks_message2">Check www.fireballsinthesky.com.au for more details.</string>
+    <string name="thanks_home">Home</string>
+    <string name="thanks_sightings">My Sightings</string>
+    <string name="show_me_where">Show On Star Map</string>
+    <string name="moon_new">A nearly new moon for the peak means dark skies, so just hope for a cloudless night!</string>
+    <string name="moon_waxing_crescent">The crescent moon is waxing (getting fatter) as the days go by and following the sun below the horizon, allowing good meteor shower viewing later on the peak night.</string>
+    <string name="moon_first_quarter">While the half moon (officially ‘first quarter’) is beautiful, it’s bright and might obstruct your viewing at the peak. Wait until it’s out of the way around midnight for darker skies.</string>
+    <string name="moon_waxing_gibbous">A gibbous moon for the peak will be rising in the afternoon, and hanging around until early morning. Your best bet to see this meteor shower is to get up really early the following day!</string>
+    <string name="moon_full">Unfortunately the moon at the peak is close to full so you won’t have very dark skies at all at this time. You should still be able to see some of the brighter fireballs, and at least you won’t lose your car keys in the grass!</string>
+    <string name="moon_waning_gibbous">The moon is waning at the peak, so will be rising sometime after dusk. You might be able to see a few meteors before bedtime!</string>
+    <string name="moon_last_quarter">The last quarter moon is still quite bright, though rising late. You should have a good dark sky before midnight on the peak.</string>
+    <string name="moon_waning_crescent">You’re lucky, the moon is a crescent for the peak, so should be out of the way most of the night, just rising around dawn.</string>
+    <string name="no_showers">No Showers</string>
+
+</resources>

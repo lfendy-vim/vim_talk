@@ -66,13 +66,15 @@ Same sane defaults (large files)
 vim ./minvimrc
 
 set eventignore+=FileType
- " save memory when other file is viewed
+
+" save memory when other file is viewed
 setlocal bufhidden=unload
- " is read-only (write with :w new_filename)
+
+" is read-only (write with :w new_filename)
 setlocal buftype=nowrite
- " no undo possible
+
+" no undo possible
 setlocal undolevels=-1
- " display message
 
 vim -u ./minvimrc a_huge_file.log
 ```
@@ -83,7 +85,24 @@ Save file using sudo
 
 ```sh
 vim rootfile.txt
-:w 
+:w !sudo tee %
 ```
 
 
+# Ancient Scroll # 3: Automation
+
+
+
+
+
+# Ancient Scroll # 4: Navigation
+Using tags
+
+```sh
+ctags -R *
+:set tags=/path/to/tags-file
+```
+
+
+# Acient Scroll # 4: Navigation
+Alternate files

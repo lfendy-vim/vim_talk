@@ -2,3 +2,4 @@
 vendor/
 script.vim
 slide*.md
+docker/file.txt

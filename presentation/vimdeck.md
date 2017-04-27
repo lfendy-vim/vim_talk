@@ -139,11 +139,116 @@ line comment 0010_line_comment_this.rb
 Try something easy:
 
 line comment 0010_line_comment_this.rb
-- can use :x,ys/^/#/
-- can use <C-v>
+```
+#using column select
+5G\<C-v>11GI#\<esc>
+```
+- 5G      - go to line 5
+- \<C-v>  - Enter column select mode
+- 11G     - select until line 11
+- I       - insert
+- #       - type #
+- /<esc>  - exit column select
+
+
+# Ancient Scroll # 2: Acceleration
+Try something easy:
+
+line comment 0010_line_comment_this.rb
+```
+#using command-line range and regex substitution
+:5,11 s/^/#/\<cr>
+```
+- :     - enter command mode
+- 5,11  - range of regex
+- s     - substitute
+- ^     - begining of line
+- #     - # character
+- /<cr> - execute substitution
+
+
+# Ancient Scroll # 2: Acceleration
+Try something easy:
+
+line comment 0010_line_comment_this.rb
+```
+#using macros
+5Gqq0i#\<esc>jq6@q
+```
+- 5G     - go to line 5
+- q      - record macro
+- q      - asign macro to q
+- 0      - begining of line
+- i      - insert mode
+- #      - # character
+- /<esc> - navigation mode
+- j      - move to next line
+- q      - stop recording macro
+- 6@q    - replay macro 'q' 6 times
 
 
 # Ancient Scroll # 3: Automation
+Upercase the 2nd character of each line
+
+0020_upercase_line.md
+
+
+# Ancient Scroll # 3: Automation
+Upercase the 2nd character of each line
+
+0020_upercase_line.md
+
+```
+#using column select
+ggl\<C-v>25j~
+```
+- gg    - go to the top of file
+- l     - move across
+- <C-v> - enter column select
+- 25    - Go to line 25
+- j     - move down
+- ~     - toggle case
+
+
+# Ancient Scroll # 3: Automation
+Upercase the 2nd character of each line
+
+0020_upercase_line.md
+
+```
+#using command-line range and regex
+:%s/^\(.\)\(\w\)/\1\U\2/<cr>
+```
+- :       - command mode
+- %       - whole file
+- s       - subtitute
+- ^       - start of line
+- \(.\)   - backreference 1st character
+- \(\w\)  - backreference 2nd character
+- \1      - repace with 1st character
+- \U      - uppercase
+- \2      - replace 2nd backreference
+
+
+# Ancient Scroll # 3: Automation
+Upercase the 2nd character of each line
+
+0020_upercase_line.md
+
+```
+#using macros
+ggqq^l~jq25@q
+
+```
+- gg - go to top of file
+- q - record macro
+- q assign macro to q
+- ^ - start of line
+- l - right one character
+- ~ - toggle case
+- j - down 1 character
+- q - finish macro
+- 25@q - execute macro 25 times
 
 
 # Ancient Scroll # 4: Navigation

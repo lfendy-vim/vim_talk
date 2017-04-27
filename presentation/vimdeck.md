@@ -240,15 +240,123 @@ Upercase the 2nd character of each line
 ggqq^l~jq25@q
 
 ```
-- gg - go to top of file
-- q - record macro
-- q assign macro to q
-- ^ - start of line
-- l - right one character
-- ~ - toggle case
-- j - down 1 character
-- q - finish macro
-- 25@q - execute macro 25 times
+- gg    - go to top of file
+- q     - record macro
+- q     - assign macro to q
+- ^     - start of line
+- l     - right one character
+- ~     - toggle case
+- j     - down 1 character
+- q     - finish macro
+- 25@q  - execute macro 25 times
+
+
+# Ancient Scroll # 3: Automation
+Upercase the 2nd word of each line
+
+0020_upercase_line.md
+
+
+# Ancient Scroll # 3: Automation
+Upercase the 2nd word of each line
+
+0020_upercase_line.md
+```
+#using cmdline range and regex
+:%s/\(^\w\+ \)\(\w\+\)/\1\U\2/
+
+```
+- :           - command mode
+- %           - whole file
+- s           - subtitute
+- \(^\w\+ \)  - match beginning of line followed by 1 or more word characters and a space
+- \(^\w\+\)   - match beginning of line followed by 1 or more word characters
+- \1          - repace with 1st word
+- \U\2        - uppercase 2nd word
+
+
+# Ancient Scroll # 3: Automation
+Upercase the 2nd word of each line
+
+0020_upercase_line.md
+```
+#using macros
+ggqqwve~j^q25@q
+```
+- gg    - go to top of file
+- q     - record macro
+- q     - assign macro to q
+- w     - go to next word
+- v     - enter visual mode
+- e     - select to end of word
+- ~     - toggle case
+- j     - down one
+- ^     - start of line
+- q     - finish macro
+- 25@q  - execute macro 25 times
+
+
+# Ancient Scroll # 3: Automation
+Upercase the 2nd word of every sentence
+
+0021_upercase_sentence.md
+
+
+# Ancient Scroll # 3: Automation
+Upercase the 2nd word of every sentence
+
+0021_upercase_sentence.md
+```
+#using cmdline range and regex
+:%s/\(^\|\.\s\+\)\(\w\+ \)\(\w\+\)/\1\2\U\3/g
+
+```
+- :             - command mode
+- %             - whole file
+- s             - subtitute
+- \(^\|\.\s\+\) - Either Begining of line OR '.' followed by 1 or more whitespace
+- \(^\w\+ \)    - match beginning of line followed by 1 or more word characters and a space
+- \(^\w\+\)     - match beginning of line followed by 1 or more word characters
+- \1            - begging or full stop + whitespace
+- \2            - 1st word
+- \U\3          - uppercase 2nd word
+
+
+# Ancient Scroll # 3: Automation
+Upercase the 2nd word of every sentence
+
+0021_upercase_sentence.md
+```
+#using macros
+ggqqwve~)q25@q
+```
+- gg    - go to top of file
+- q     - record macro
+- q     - assign macro to q
+- w     - go to next word
+- v     - enter visual mode
+- e     - select to end of word
+- ~     - toggle case
+- )     - go to next senence
+- q     - finish macro
+- 25@q  - execute macro 25 times
+
+
+# Ancient Scroll # 3: Automation
+Pretty Print Json (Using an external program)
+
+0031_minified_json.md
+
+Note: python -m json.tool is installed
+
+# Ancient Scroll # 3: Automation
+Pretty Print Json (Using an external program)
+
+0031_minified_json.md
+
+```
+:%! python -m json.tool
+```
 
 
 # Ancient Scroll # 4: Navigation

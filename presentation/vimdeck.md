@@ -156,13 +156,13 @@ Try something easy:
 
 line comment 0010_line_comment_this.rb
 ```
-#using command-line range and regex substitution
+#using regex substitution
 :5,11 s/^/#/\<cr>
 ```
 - :     - enter command mode
 - 5,11  - range of regex
 - s     - substitute
-- ^     - begining of line
+- ^     - beginning of line
 - #     - # character
 - /<cr> - execute substitution
 
@@ -177,8 +177,8 @@ line comment 0010_line_comment_this.rb
 ```
 - 5G     - go to line 5
 - q      - record macro
-- q      - asign macro to q
-- 0      - begining of line
+- q      - assign macro to q
+- 0      - beginning of line
 - i      - insert mode
 - #      - # character
 - /<esc> - navigation mode
@@ -188,15 +188,16 @@ line comment 0010_line_comment_this.rb
 
 
 # Ancient Scroll # 3: Formulate
-Upercase the 2nd character of each line
+Uppercase the 2nd character of each line
+>>>>>>> Reduced sizde of headings and fix spelling
 
-0020_upercase_line.md
+0020_upecase_line.md
 
 
 # Ancient Scroll # 3: Formulate
-Upercase the 2nd character of each line
+Uppercase the 2nd character of each line
 
-0020_upercase_line.md
+0020_upcase_line.md
 
 ```
 #using column select
@@ -211,29 +212,29 @@ ggl\<C-v>25j~
 
 
 # Ancient Scroll # 3: Formulate
-Upercase the 2nd character of each line
+Uppercase the 2nd character of each line
 
-0020_upercase_line.md
+0020_upecase_line.md
 
 ```
-#using command-line range and regex
+#using regex subsitution
 :%s/^\(.\)\(\w\)/\1\U\2/<cr>
 ```
 - :       - command mode
 - %       - whole file
-- s       - subtitute
+- s       - substitute
 - ^       - start of line
-- \(.\)   - backreference 1st character
-- \(\w\)  - backreference 2nd character
-- \1      - repace with 1st character
+- \(.\)   - back reference 1st character
+- \(\w\)  - back reference 2nd character
+- \1      - replace with 1st character
 - \U      - uppercase
-- \2      - replace 2nd backreference
+- \2      - replace 2nd back reference
 
 
 # Ancient Scroll # 3: Formulate
 Upercase the 2nd character of each line
 
-0020_upercase_line.md
+0020_upcase_line.md
 
 ```
 #using macros
@@ -252,33 +253,33 @@ ggqq^l~jq25@q
 
 
 # Ancient Scroll # 3: Formulate
-Upercase the 2nd word of each line
+Uppercase the 2nd word of each line
 
-0020_upercase_line.md
+0020_upcase_line.md
 
 
 # Ancient Scroll # 3: Formulate
-Upercase the 2nd word of each line
+Uppercase the 2nd word of each line
 
-0020_upercase_line.md
+0020_upcase_line.md
 ```
-#using cmdline range and regex
+#using regex substitution
 :%s/\(^\w\+ \)\(\w\+\)/\1\U\2/
 
 ```
 - :           - command mode
 - %           - whole file
-- s           - subtitute
+- s           - substitute
 - \(^\w\+ \)  - match beginning of line followed by 1 or more word characters and a space
 - \(^\w\+\)   - match beginning of line followed by 1 or more word characters
-- \1          - repace with 1st word
+- \1          - replace with 1st word
 - \U\2        - uppercase 2nd word
 
 
 # Ancient Scroll # 3: Formulate
-Upercase the 2nd word of each line
+Uppercase the 2nd word of each line
 
-0020_upercase_line.md
+0020_upcase_line.md
 ```
 #using macros
 ggqqwve~j^q25@q
@@ -297,24 +298,24 @@ ggqqwve~j^q25@q
 
 
 # Ancient Scroll # 3: Formulate
-Upercase the 2nd word of every sentence
+Uppercase the 2nd word of every sentence
 
-0021_upercase_sentence.md
+0021_upcase_sentence.md
 
 
 # Ancient Scroll # 3: Formulate
-Upercase the 2nd word of every sentence
+Uppercase the 2nd word of every sentence
 
-0021_upercase_sentence.md
+0021_upcase_sentence.md
 ```
-#using cmdline range and regex
+#using regex substitution
 :%s/\(^\|\.\s\+\)\(\w\+ \)\(\w\+\)/\1\2\U\3/g
 
 ```
 - :             - command mode
 - %             - whole file
-- s             - subtitute
-- \(^\|\.\s\+\) - Either Begining of line OR '.' followed by 1 or more whitespace
+- s             - substitute
+- \(^\|\.\s\+\) - Either beginning of line OR '.' followed by 1 or more whitespace
 - \(^\w\+ \)    - match beginning of line followed by 1 or more word characters and a space
 - \(^\w\+\)     - match beginning of line followed by 1 or more word characters
 - \1            - begging or full stop + whitespace
@@ -323,9 +324,9 @@ Upercase the 2nd word of every sentence
 
 
 # Ancient Scroll # 3: Formulate
-Upercase the 2nd word of every sentence
+Uppercase the 2nd word of every sentence
 
-0021_upercase_sentence.md
+0021_upcase_sentence.md
 ```
 #using macros
 ggqqwve~)q25@q
@@ -337,7 +338,7 @@ ggqqwve~)q25@q
 - v     - enter visual mode
 - e     - select to end of word
 - ~     - toggle case
-- )     - go to next senence
+- )     - go to next sentence
 - q     - finish macro
 - 25@q  - execute macro 25 times
 
@@ -345,7 +346,7 @@ ggqqwve~)q25@q
 # Ancient Scroll # 3: Formulate
 Pretty Print Json (Using an external program)
 
-0031_minified_json.md
+0030_minified_json.md
 
 Note: python -m json.tool is installed
 
@@ -369,7 +370,7 @@ ctags -R *
 ```
 
 
-# Acient Scroll # 4: Navigate
+# Ancient Scroll # 4: Navigate
 Using cscope (starscope)
 
 

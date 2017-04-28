@@ -16,8 +16,7 @@ RUN apt-get update && \
 RUN ["useradd", "someuser", "-G", "sudo", "-p", "$1$yEoegdSc$bFV7vnJ.fmwexAWnGNBhc/"]
 WORKDIR /home/someuser
 RUN mkdir -p /home/someuser/sample
-COPY files/ /home/someuser/sample
-COPY examples/ /home/someuser/sample
+ADD files/ /home/someuser/sample
 
 RUN mv /home/someuser/sample/bashrc /home/someuser/.bashrc && \
     mv /home/someuser/sample/vimrc /home/someuser/.vimrc && \

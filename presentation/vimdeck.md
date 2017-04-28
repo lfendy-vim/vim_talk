@@ -139,7 +139,7 @@ line comment 0010_line_comment_this.rb
 Try something easy:
 
 line comment 0010_line_comment_this.rb
-```
+```vim
 #using column select
 5G\<C-v>11GI#\<esc>
 ```
@@ -155,7 +155,7 @@ line comment 0010_line_comment_this.rb
 Try something easy:
 
 line comment 0010_line_comment_this.rb
-```
+```vim
 #using regex substitution
 :5,11 s/^/#/\<cr>
 ```
@@ -171,7 +171,7 @@ line comment 0010_line_comment_this.rb
 Try something easy:
 
 line comment 0010_line_comment_this.rb
-```
+```vim
 #using macros
 5Gqq0i#\<esc>jq6@q
 ```
@@ -199,7 +199,7 @@ Uppercase the 2nd character of each line
 
 0020_upcase_line.md
 
-```
+```vim
 #using column select
 ggl\<C-v>25j~
 ```
@@ -216,7 +216,7 @@ Uppercase the 2nd character of each line
 
 0020_upecase_line.md
 
-```
+```vim
 #using regex subsitution
 :%s/^\(.\)\(\w\)/\1\U\2/<cr>
 ```
@@ -236,10 +236,9 @@ Upercase the 2nd character of each line
 
 0020_upcase_line.md
 
-```
+```vim
 #using macros
 ggqq^l~jq25@q
-
 ```
 - gg    - go to top of file
 - q     - record macro
@@ -262,7 +261,7 @@ Uppercase the 2nd word of each line
 Uppercase the 2nd word of each line
 
 0020_upcase_line.md
-```
+```vim
 #using regex substitution
 :%s/\(^\w\+ \)\(\w\+\)/\1\U\2/
 
@@ -280,7 +279,7 @@ Uppercase the 2nd word of each line
 Uppercase the 2nd word of each line
 
 0020_upcase_line.md
-```
+```vim
 #using macros
 ggqqwve~j^q25@q
 ```
@@ -307,7 +306,7 @@ Uppercase the 2nd word of every sentence
 Uppercase the 2nd word of every sentence
 
 0021_upcase_sentence.md
-```
+```vim
 #using regex substitution
 :%s/\(^\|\.\s\+\)\(\w\+ \)\(\w\+\)/\1\2\U\3/g
 
@@ -327,7 +326,7 @@ Uppercase the 2nd word of every sentence
 Uppercase the 2nd word of every sentence
 
 0021_upcase_sentence.md
-```
+```vim
 #using macros
 ggqqwve~)q25@q
 ```
@@ -356,7 +355,7 @@ Pretty Print Json (Using an external program)
 
 0030_minified_json.md
 
-```
+```vim
 :%! python -m json.tool
 ```
 

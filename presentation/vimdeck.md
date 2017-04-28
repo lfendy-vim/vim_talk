@@ -26,7 +26,8 @@
 By Liauw Fendy and Aaron Edwards
 
 
-# Agenda
+# Vimja mantras
+## (Agenda)
 
 - Vim-ja meditate   (Setup your machine)
 - Vim-ja accelerate (Handle scenarios lyk a Baus)
@@ -51,7 +52,7 @@ docker pull lfendy/vim_talk     # this will take a Loooong time
 # Ancient Scroll # 1: Meditate
 Some sane defaults (normal)
 
-```sh
+```vim
 vim ./sanevimrc
 set nocompatible
 set number
@@ -98,6 +99,24 @@ native packages...
 ```
 
 
+# Ancient Scroll # 1: Meditate
+analyse yourself
+
+```sh
+vim -w keylog.out
+```
+
+
+# Ancient Scroll # 2: Accelerate
+remember past sessions
+
+```vim
+:mks! mysession.vim
+:source mysession.vim
+"or
+vim -S mysession.vim
+```
+
 # Ancient Scroll # 2: Accelerate
 Save file using sudo
 
@@ -118,7 +137,7 @@ The ungodly :W
 # Ancient Scroll # 2: Accelerate
 Vim 8 async job and channels demo (Codi) - live repl
 
-```sh
+```ruby
 vim test.rb
 
 def add2num(x,y)
@@ -360,12 +379,34 @@ Pretty Print Json (Using an external program)
 ```
 
 
+# Ancient Scroll # 3: Formulate
+How to do internationalisation / localisation
+
+vim -u sample/sanewimvrc strings.xml
+```vim
+:source sample/translate.vim
+visual select
+<leader>tr
+```
+
+
 # Ancient Scroll # 4: Navigate
 Using tags
 
 ```sh
 ctags -R *
 :set tags=/path/to/tags-file
+# try joda-time
+```
+
+
+# Ancient Scroll #4: Navigate
+Ctrl - O is your friend
+
+```vim
+" navigate back and forth between last jump
+<C-o> navigates back
+<C-i> navigates forward
 ```
 
 

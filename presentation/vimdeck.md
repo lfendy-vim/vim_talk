@@ -41,11 +41,9 @@ Browse http://vimuser:vimuser@10.0.0.4:1337/
 
 ```sh
 ssh vimuser@10.0.0.5
-```
 
-or
+# OR you can do this instead, but will take a really long time
 
-```sh
 docker pull lfendy/vim_talk     # this will take a Loooong time
 ```
 
@@ -69,7 +67,7 @@ vim -u ~/sample/sanevimrc ~/sample/httpd.conf
 # Ancient Scroll # 1: Meditation
 Same sane defaults (large files)
 
-```sh
+```vim
 vim ./minvimrc
 
 set eventignore+=FileType
@@ -95,6 +93,8 @@ native packages...
 ```sh
 .vim/pack/pluginGroup/start/zzz
 .vim/pack/pluginGroup/opt/yyy
+
+# opt need to use :packadd packagename
 ```
 
 

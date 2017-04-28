@@ -9,6 +9,7 @@ RUN apt-get update && \
     ./configure && \
     make && \
     sudo make install && \
+    gem install starscope && \
     mkdir -p /home/someuser/.vim/pack/myplugins/start/ && \
     git clone --depth 1 https://github.com/metakirby5/codi.vim /home/someuser/.vim/pack/myplugins/start/codi.vim && \
     apt-get install gawk -y && curl -L git.io/trans -o /bin/trans && chmod +x /bin/trans
@@ -16,6 +17,7 @@ RUN ["useradd", "someuser", "-G", "sudo", "-p", "$1$yEoegdSc$bFV7vnJ.fmwexAWnGNB
 WORKDIR /home/someuser
 RUN mkdir -p /home/someuser/sample
 COPY files/ /home/someuser/sample
+COPY examples/ /home/someuser/sample
 
 RUN mv /home/someuser/sample/bashrc /home/someuser/.bashrc && \
     mv /home/someuser/sample/vimrc /home/someuser/.vimrc && \

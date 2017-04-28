@@ -18,7 +18,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.synced_folder '..', '/vagrant'
 
-  #config.vm.network "public_network", bridge: "en8: AX88x72A"
+  # config.vm.network "public_network", bridge: "en8: AX88x72A"
 
   config.vm.provider "virtualbox" do |vb|
     vb.name = "vimserver"

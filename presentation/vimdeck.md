@@ -34,7 +34,7 @@ By Liauw Fendy and Aaron Edwards
 - Vim-ja navigate   (Learn teleportation)
 
 
-# Ancient Scroll # 1: Meditation
+# Ancient Scroll # 1: Meditate
 ## Setup your machine
 
 Browse http://vimuser:vimuser@10.0.0.4:1337/
@@ -48,7 +48,7 @@ docker pull lfendy/vim_talk     # this will take a Loooong time
 ```
 
 
-# Ancient Scroll # 1: Meditation
+# Ancient Scroll # 1: Meditate
 Some sane defaults (normal)
 
 ```sh
@@ -64,7 +64,7 @@ vim -u ~/sample/sanevimrc ~/sample/httpd.conf
 ```
 
 
-# Ancient Scroll # 1: Meditation
+# Ancient Scroll # 1: Meditate
 Same sane defaults (large files)
 
 ```vim
@@ -87,7 +87,7 @@ time vim -u ~/sample/minvimrc ~/sample/largefile.txt -c ":q"
 ```
 
 
-# Ancient Scroll # 1: Meditation
+# Ancient Scroll # 1: Meditate
 native packages...
 
 ```sh
@@ -98,7 +98,7 @@ native packages...
 ```
 
 
-# Ancient Scroll # 2: Acceleration
+# Ancient Scroll # 2: Accelerate
 Save file using sudo
 
 ```sh
@@ -107,7 +107,7 @@ vim ~/sample/root_owned_file.conf
 ```
 
 
-# Ancient Scroll # 2: Acceleration
+# Ancient Scroll # 2: Accelerate
 The ungodly :W
 
 ```sh
@@ -115,7 +115,7 @@ The ungodly :W
 ```
 
 
-# Ancient Scroll # 2: Acceleration
+# Ancient Scroll # 2: Accelerate
 Vim 8 async job and channels demo (Codi) - live repl
 
 ```sh
@@ -129,13 +129,13 @@ a = add2num(2,3)
 ```
 
 
-# Ancient Scroll # 2: Acceleration
+# Ancient Scroll # 2: Accelerate
 Try something easy:
 
 line comment 0010_line_comment_this.rb
 
 
-# Ancient Scroll # 2: Acceleration
+# Ancient Scroll # 2: Accelerate
 Try something easy:
 
 line comment 0010_line_comment_this.rb
@@ -151,7 +151,7 @@ line comment 0010_line_comment_this.rb
 - /<esc>  - exit column select
 
 
-# Ancient Scroll # 2: Acceleration
+# Ancient Scroll # 2: Accelerate
 Try something easy:
 
 line comment 0010_line_comment_this.rb
@@ -167,7 +167,7 @@ line comment 0010_line_comment_this.rb
 - /<cr> - execute substitution
 
 
-# Ancient Scroll # 2: Acceleration
+# Ancient Scroll # 2: Accelerate
 Try something easy:
 
 line comment 0010_line_comment_this.rb
@@ -187,13 +187,13 @@ line comment 0010_line_comment_this.rb
 - 6@q    - replay macro 'q' 6 times
 
 
-# Ancient Scroll # 3: Automation
+# Ancient Scroll # 3: Formulate
 Upercase the 2nd character of each line
 
 0020_upercase_line.md
 
 
-# Ancient Scroll # 3: Automation
+# Ancient Scroll # 3: Formulate
 Upercase the 2nd character of each line
 
 0020_upercase_line.md
@@ -210,7 +210,7 @@ ggl\<C-v>25j~
 - ~     - toggle case
 
 
-# Ancient Scroll # 3: Automation
+# Ancient Scroll # 3: Formulate
 Upercase the 2nd character of each line
 
 0020_upercase_line.md
@@ -230,7 +230,7 @@ Upercase the 2nd character of each line
 - \2      - replace 2nd backreference
 
 
-# Ancient Scroll # 3: Automation
+# Ancient Scroll # 3: Formulate
 Upercase the 2nd character of each line
 
 0020_upercase_line.md
@@ -251,13 +251,13 @@ ggqq^l~jq25@q
 - 25@q  - execute macro 25 times
 
 
-# Ancient Scroll # 3: Automation
+# Ancient Scroll # 3: Formulate
 Upercase the 2nd word of each line
 
 0020_upercase_line.md
 
 
-# Ancient Scroll # 3: Automation
+# Ancient Scroll # 3: Formulate
 Upercase the 2nd word of each line
 
 0020_upercase_line.md
@@ -275,7 +275,7 @@ Upercase the 2nd word of each line
 - \U\2        - uppercase 2nd word
 
 
-# Ancient Scroll # 3: Automation
+# Ancient Scroll # 3: Formulate
 Upercase the 2nd word of each line
 
 0020_upercase_line.md
@@ -296,13 +296,13 @@ ggqqwve~j^q25@q
 - 25@q  - execute macro 25 times
 
 
-# Ancient Scroll # 3: Automation
+# Ancient Scroll # 3: Formulate
 Upercase the 2nd word of every sentence
 
 0021_upercase_sentence.md
 
 
-# Ancient Scroll # 3: Automation
+# Ancient Scroll # 3: Formulate
 Upercase the 2nd word of every sentence
 
 0021_upercase_sentence.md
@@ -322,7 +322,7 @@ Upercase the 2nd word of every sentence
 - \U\3          - uppercase 2nd word
 
 
-# Ancient Scroll # 3: Automation
+# Ancient Scroll # 3: Formulate
 Upercase the 2nd word of every sentence
 
 0021_upercase_sentence.md
@@ -342,7 +342,7 @@ ggqqwve~)q25@q
 - 25@q  - execute macro 25 times
 
 
-# Ancient Scroll # 3: Automation
+# Ancient Scroll # 3: Formulate
 Pretty Print Json (Using an external program)
 
 0031_minified_json.md
@@ -350,7 +350,7 @@ Pretty Print Json (Using an external program)
 Note: python -m json.tool is installed
 
 
-# Ancient Scroll # 3: Automation
+# Ancient Scroll # 3: Formulate
 Pretty Print Json (Using an external program)
 
 0030_minified_json.md
@@ -360,7 +360,7 @@ Pretty Print Json (Using an external program)
 ```
 
 
-# Ancient Scroll # 4: Navigation
+# Ancient Scroll # 4: Navigate
 Using tags
 
 ```sh
@@ -369,7 +369,7 @@ ctags -R *
 ```
 
 
-# Acient Scroll # 4: Navigation
+# Acient Scroll # 4: Navigate
 Using cscope (starscope)
 
 

@@ -1,7 +1,7 @@
 FROM lfendy/vim8
 
 RUN apt-get update && \
-    apt-get install sudo autoconf -y && \
+    apt-get install sudo autoconf nodejs -y && \
     git clone --depth 1 https://github.com/JodaOrg/joda-time.git /home/someuser/joda-time && \
     git clone --depth 1 https://github.com/universal-ctags/ctags.git /home/someuser/ctags && \
     cd /home/someuser/ctags && \

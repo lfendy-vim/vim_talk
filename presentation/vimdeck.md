@@ -490,6 +490,16 @@ Ctrl - O is your friend
 # Ancient Scroll # 4: Navigate
 Using cscope (starscope)
 
+```sh
+starscope -e cscope
+```
+
+```vim
+# try treetop
+:set tags=/path/to/tags-file
+- <C-]> - jump to definition
+```
+
 
 # Ancient Scroll # 5: Reflect
 What we discussed:

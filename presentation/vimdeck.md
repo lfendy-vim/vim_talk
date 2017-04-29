@@ -26,7 +26,7 @@
 By Liauw Fendy and Aaron Edwards
 
 
-# Vimja mantras
+# Vim-ja mantras
 ## (Agenda)
 
 - Vim-ja meditate   (Setup your machine)
@@ -38,10 +38,9 @@ By Liauw Fendy and Aaron Edwards
 # Ancient Scroll # 1: Meditate
 ## Setup your machine
 
-Browse http://vimuser:vimuser@10.0.0.4:1337/
-
 ```sh
-ssh vimuser@10.0.0.5
+# Browse http://10.0.0.5:1337/
+ssh vimuser@10.0.0.9
 
 # OR you can do this instead, but will take a really long time
 
@@ -117,6 +116,7 @@ remember past sessions
 vim -S mysession.vim
 ```
 
+
 # Ancient Scroll # 2: Accelerate
 Save file using sudo
 
@@ -131,6 +131,30 @@ The ungodly :W
 
 ```sh
 :cnoreabbrev W w
+```
+
+
+# Ancient Scroll # 2: Accelerate
+The stupid wtf q:, I can't QUIT ?!?!
+
+```sh
+# it is not stupid:
+# you can edit history
+# you can use your vim keys in command mode
+```
+
+
+# Ancient Scroll # 2: Accelerate
+Substituting \/\/\/\/
+
+```vim
+vim substitute_this
+/home/user/vimuser/magic/folder/text
+/home/user/vimuser/someother/magic/folder/text
+https://this.is.theurl.com/to/a/resource
+
+:%s/home\/user\/vimuser/var\/magic\/root/gc
+:s/home\/user\/vimuser/var\/magic\/root/gc
 ```
 
 
@@ -208,7 +232,7 @@ line comment 0010_line_comment_this.rb
 
 # Ancient Scroll # 3: Formulate
 Uppercase the 2nd character of each line
->>>>>>> Reduced sizde of headings and fix spelling
+>>>>>>> Reduced size of headings and fix spelling
 
 0020_upecase_line.md
 

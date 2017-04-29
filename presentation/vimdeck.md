@@ -33,6 +33,7 @@ By Liauw Fendy and Aaron Edwards
 - Vim-ja accelerate (Handle scenarios lyk a Baus)
 - Vim-ja formulate  (Macros)
 - Vim-ja navigate   (Learn teleportation)
+- Vim-ja reflect    (Summary)
 
 
 # Ancient Scroll # 1: Meditate
@@ -451,5 +452,28 @@ Ctrl - O is your friend
 Using cscope (starscope)
 
 
+# Ancient Scroll # 5: Reflect
+What we discussed:
 
+Meditate - vim setups
+- sane defaults normal files
+- sane defaults large files
+- vim 8 native packages
+- output keylog
 
+Accelerate - those minor annoyances
+- session
+- sudo save
+- :W
+- q:
+- :Codi - async jobs and channels
+- Exercise: line comment
+
+Formulate - and automate
+- Exercises
+- vimscript translate
+
+Navigate - teleport and jump
+- ctags - ctrl ]
+- ctrl - o and ctrl - i
+- cscope using starscope

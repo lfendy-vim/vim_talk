@@ -175,19 +175,24 @@ a = add2num(2,3)
 
 # Ancient Scroll # 2: Accelerate
 Try something easy:
-```sh
+
+```ruby
 line comment 0010_line_comment_this.rb
 ```
 
+
 # Ancient Scroll # 2: Accelerate
 Try something easy:
-```sh
+
+```ruby
 line comment 0010_line_comment_this.rb
 ```
+
 ```vim
 #using column select
 5G\<C-v>11GI#\<esc>
 ```
+
 - 5G      - go to line 5
 - \<C-v>  - Enter column select mode
 - 11G     - select until line 11
@@ -198,13 +203,16 @@ line comment 0010_line_comment_this.rb
 
 # Ancient Scroll # 2: Accelerate
 Try something easy:
-```sh
+
+```ruby
 line comment 0010_line_comment_this.rb
 ```
+
 ```vim
 #using regex substitution
 :5,11 s/^/#/\<cr>
 ```
+
 - :     - enter command mode
 - 5,11  - range of regex
 - s     - substitute
@@ -215,13 +223,16 @@ line comment 0010_line_comment_this.rb
 
 # Ancient Scroll # 2: Accelerate
 Try something easy:
-```sh
+
+```ruby
 line comment 0010_line_comment_this.rb
 ```
+
 ```vim
 #using macros
 5Gqq0i#\<esc>jq6@q
 ```
+
 - 5G     - go to line 5
 - q      - record macro
 - q      - assign macro to q
@@ -236,19 +247,24 @@ line comment 0010_line_comment_this.rb
 
 # Ancient Scroll # 3: Formulate
 Uppercase the 2nd character of each line
-```sh
-0020_upecase_line.md
+
+```ruby
+0020_upcase_line.md
 ```
+
 
 # Ancient Scroll # 3: Formulate
 Uppercase the 2nd character of each line
-```sh
+
+```ruby
 0020_upcase_line.md
 ```
+
 ```vim
 #using column select
 ggl\<C-v>25j~
 ```
+
 - gg    - go to the top of file
 - l     - move across
 - <C-v> - enter column select
@@ -259,8 +275,9 @@ ggl\<C-v>25j~
 
 # Ancient Scroll # 3: Formulate
 Uppercase the 2nd character of each line
-```sh
-0020_upecase_line.md
+
+```ruby
+0020_upcase_line.md
 ```
 
 ```vim
@@ -280,7 +297,8 @@ Uppercase the 2nd character of each line
 
 # Ancient Scroll # 3: Formulate
 Upercase the 2nd character of each line
-```sh
+
+```ruby
 0020_upcase_line.md
 ```
 
@@ -288,6 +306,7 @@ Upercase the 2nd character of each line
 #using macros
 ggqq^l~jq25@q
 ```
+
 - gg    - go to top of file
 - q     - record macro
 - q     - assign macro to q
@@ -301,21 +320,24 @@ ggqq^l~jq25@q
 
 # Ancient Scroll # 3: Formulate
 Uppercase the 2nd word of each line
-```sh
+
+```ruby
 0020_upcase_line.md
 ```
 
 
 # Ancient Scroll # 3: Formulate
 Uppercase the 2nd word of each line
-```sh
+
+```ruby
 0020_upcase_line.md
 ```
+
 ```vim
 #using regex substitution
 :%s/\(^\w\+ \)\(\w\+\)/\1\U\2/
-
 ```
+
 - :           - command mode
 - %           - whole file
 - s           - substitute
@@ -327,13 +349,16 @@ Uppercase the 2nd word of each line
 
 # Ancient Scroll # 3: Formulate
 Uppercase the 2nd word of each line
-```sh
+
+```ruby
 0020_upcase_line.md
 ```
+
 ```vim
 #using macros
 ggqqwve~j^q25@q
 ```
+
 - gg    - go to top of file
 - q     - record macro
 - q     - assign macro to q
@@ -349,21 +374,24 @@ ggqqwve~j^q25@q
 
 # Ancient Scroll # 3: Formulate
 Uppercase the 2nd word of every sentence
-```sh
+
+```ruby
 0021_upcase_sentence.md
 ```
 
 
 # Ancient Scroll # 3: Formulate
 Uppercase the 2nd word of every sentence
-```sh
+
+```ruby
 0021_upcase_sentence.md
 ```
+
 ```vim
 #using regex substitution
 :%s/\(^\|\.\s\+\)\(\w\+ \)\(\w\+\)/\1\2\U\3/g
-
 ```
+
 - :             - command mode
 - %             - whole file
 - s             - substitute
@@ -377,13 +405,16 @@ Uppercase the 2nd word of every sentence
 
 # Ancient Scroll # 3: Formulate
 Uppercase the 2nd word of every sentence
-```sh
+
+```ruby
 0021_upcase_sentence.md
 ```
+
 ```vim
 #using macros
 ggqqwve~)q25@q
 ```
+
 - gg    - go to top of file
 - q     - record macro
 - q     - assign macro to q
@@ -398,7 +429,8 @@ ggqqwve~)q25@q
 
 # Ancient Scroll # 3: Formulate
 Pretty Print Json (Using an external program)
-```sh
+
+```ruby
 0030_minified_json.md
 ```
 
@@ -407,7 +439,8 @@ Note: python -m json.tool is installed
 
 # Ancient Scroll # 3: Formulate
 Pretty Print Json (Using an external program)
-```sh
+
+```ruby
 0030_minified_json.md
 ```
 
@@ -418,9 +451,11 @@ Pretty Print Json (Using an external program)
 
 # Ancient Scroll # 3: Formulate
 How to do internationalisation / localisation
+
 ```sh
 vim -u sample/sanewimvrc strings.xml
 ```
+
 ```vim
 :source sample/translate.vim
 visual select
@@ -429,7 +464,7 @@ visual select
 
 
 # Ancient Scroll # 4: Navigate
-Using tags
+using tags
 
 ```sh
 ctags -R *

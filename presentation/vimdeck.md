@@ -433,8 +433,12 @@ Using tags
 
 ```sh
 ctags -R *
-:set tags=/path/to/tags-file
+```
+
+```vim
 # try joda-time
+:set tags=/path/to/tags-file
+- <C-]> - jump to definition
 ```
 
 

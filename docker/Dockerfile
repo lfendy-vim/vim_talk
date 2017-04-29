@@ -1,7 +1,7 @@
 FROM lfendy/vim8
 
 RUN apt-get update && \
-    apt-get install sudo autoconf nodejs -y && \
+    apt-get install sudo autoconf -y && \
     git clone --depth 1 https://github.com/JodaOrg/joda-time.git /home/someuser/joda-time && \
     git clone --depth 1 https://github.com/universal-ctags/ctags.git /home/someuser/ctags && \
     cd /home/someuser/ctags && \
@@ -22,3 +22,5 @@ RUN mv /home/someuser/sample/bashrc /home/someuser/.bashrc && \
     mv /home/someuser/sample/vimrc /home/someuser/.vimrc && \
     chown -R someuser:someuser /home/someuser && \
     chown root:root /home/someuser/sample/root_owned_file.conf
+
+RUN sudo apt-get install nodejs -y

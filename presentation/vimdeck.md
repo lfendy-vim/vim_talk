@@ -496,8 +496,10 @@ starscope -e cscope
 
 ```vim
 # try treetop
-:set tags=/path/to/tags-file
-- <C-]> - jump to definition
+vim lib/treetop/compiler/metagrammar.rb
+:cs add ./cscope.out
+:csc find s SyntaxNode
+" then type number
 ```
 
 

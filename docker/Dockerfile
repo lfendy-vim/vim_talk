@@ -26,3 +26,4 @@ RUN mv /home/someuser/sample/bashrc /home/someuser/.bashrc && \
 RUN sudo apt-get install nodejs -y
 RUN git clone --depth 1 https://github.com/nathansobo/treetop /home/someuser/treetop
 RUN chown -R someuser:someuser /home/someuser/treetop
+RUN sudo apt-get install cscope -y

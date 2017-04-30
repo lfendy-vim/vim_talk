@@ -517,6 +517,7 @@ Accelerate - those minor annoyances
 - sudo save
 - :W
 - q:
+- Substituting \/\/\/\/
 - :Codi - async jobs and channels
 - Exercise: line comment
 

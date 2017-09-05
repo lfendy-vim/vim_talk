@@ -23,7 +23,7 @@
 
 ## All you need is VIM
 
-By Liauw Fendy and Aaron Edwards
+By Liauw Fendy and Nhong (Anuchit Prasertsang)
 
 
 # Vim-ja mantras
@@ -40,16 +40,13 @@ By Liauw Fendy and Aaron Edwards
 ## Setup your machine
 
 ```sh
-# Browse http://10.0.0.5:1337/
-ssh vimuser@10.0.0.9
-
-# OR you can do this instead, but will take a really long time
-
 docker pull lfendy/vim_talk     # this will take a Loooong time
+docker run -it -u someuser lfendy/vim_talk
 ```
 
 
 # Ancient Scroll # 1: Meditate
+(Nhong)
 Some sane defaults (normal)
 
 ```vim
@@ -66,6 +63,7 @@ vim -u ~/sample/sanevimrc ~/sample/httpd.conf
 
 
 # Ancient Scroll # 1: Meditate
+(Nhong)
 Same sane defaults (large files)
 
 ```vim
@@ -89,6 +87,7 @@ time vim -u ~/sample/minvimrc ~/sample/largefile.txt -c ":q"
 
 
 # Ancient Scroll # 1: Meditate
+(Fendy)
 native packages...
 
 ```sh
@@ -100,6 +99,7 @@ native packages...
 
 
 # Ancient Scroll # 1: Meditate
+(Fendy)
 analyse yourself
 
 ```sh
@@ -108,6 +108,7 @@ vim -w keylog.out
 
 
 # Ancient Scroll # 2: Accelerate
+(Fendy)
 remember past sessions
 
 ```vim
@@ -119,6 +120,7 @@ vim -S mysession.vim
 
 
 # Ancient Scroll # 2: Accelerate
+(Nhong)
 Save file using sudo
 
 ```sh
@@ -128,6 +130,7 @@ vim ~/sample/root_owned_file.conf
 
 
 # Ancient Scroll # 2: Accelerate
+(Nhong)
 The ungodly :W
 
 ```sh
@@ -136,6 +139,7 @@ The ungodly :W
 
 
 # Ancient Scroll # 2: Accelerate
+(Nhong)
 The stupid wtf q:, I can't QUIT ?!?!
 
 ```sh
@@ -146,6 +150,7 @@ The stupid wtf q:, I can't QUIT ?!?!
 
 
 # Ancient Scroll # 2: Accelerate
+(Nhong)
 Substituting \/\/\/\/
 
 ```vim
@@ -160,6 +165,7 @@ https://this.is.theurl.com/to/a/resource
 
 
 # Ancient Scroll # 2: Accelerate
+(Fendy)
 Vim 8 async job and channels demo (Codi) - live repl
 
 ```ruby
@@ -174,6 +180,7 @@ a = add2num(2,3)
 
 
 # Ancient Scroll # 2: Accelerate
+(Nhong)
 Try something easy:
 
 ```ruby
@@ -182,6 +189,7 @@ line comment 0010_line_comment_this.rb
 
 
 # Ancient Scroll # 2: Accelerate
+(Nhong)
 Try something easy:
 
 ```ruby
@@ -202,6 +210,7 @@ line comment 0010_line_comment_this.rb
 
 
 # Ancient Scroll # 2: Accelerate
+(Nhong)
 Try something easy:
 
 ```ruby
@@ -222,6 +231,7 @@ line comment 0010_line_comment_this.rb
 
 
 # Ancient Scroll # 2: Accelerate
+(Nhong)
 Try something easy:
 
 ```ruby
@@ -246,6 +256,7 @@ line comment 0010_line_comment_this.rb
 
 
 # Ancient Scroll # 3: Formulate
+(Fendy)
 Uppercase the 2nd character of each line
 
 ```ruby
@@ -254,6 +265,7 @@ Uppercase the 2nd character of each line
 
 
 # Ancient Scroll # 3: Formulate
+(Fendy)
 Uppercase the 2nd character of each line
 
 ```ruby
@@ -274,6 +286,7 @@ ggl\<C-v>25j~
 
 
 # Ancient Scroll # 3: Formulate
+(Fendy)
 Uppercase the 2nd character of each line
 
 ```ruby
@@ -296,6 +309,7 @@ Uppercase the 2nd character of each line
 
 
 # Ancient Scroll # 3: Formulate
+(Fendy)
 Upercase the 2nd character of each line
 
 ```ruby
@@ -319,115 +333,7 @@ ggqq^l~jq25@q
 
 
 # Ancient Scroll # 3: Formulate
-Uppercase the 2nd word of each line
-
-```ruby
-0020_upcase_line.md
-```
-
-
-# Ancient Scroll # 3: Formulate
-Uppercase the 2nd word of each line
-
-```ruby
-0020_upcase_line.md
-```
-
-```vim
-#using regex substitution
-:%s/\(^\w\+ \)\(\w\+\)/\1\U\2/
-```
-
-- :           - command mode
-- %           - whole file
-- s           - substitute
-- \(^\w\+ \)  - match beginning of line followed by 1 or more word characters and a space
-- \(^\w\+\)   - match beginning of line followed by 1 or more word characters
-- \1          - replace with 1st word
-- \U\2        - uppercase 2nd word
-
-
-# Ancient Scroll # 3: Formulate
-Uppercase the 2nd word of each line
-
-```ruby
-0020_upcase_line.md
-```
-
-```vim
-#using macros
-ggqqwve~j^q25@q
-```
-
-- gg    - go to top of file
-- q     - record macro
-- q     - assign macro to q
-- w     - go to next word
-- v     - enter visual mode
-- e     - select to end of word
-- ~     - toggle case
-- j     - down one
-- ^     - start of line
-- q     - finish macro
-- 25@q  - execute macro 25 times
-
-
-# Ancient Scroll # 3: Formulate
-Uppercase the 2nd word of every sentence
-
-```ruby
-0021_upcase_sentence.md
-```
-
-
-# Ancient Scroll # 3: Formulate
-Uppercase the 2nd word of every sentence
-
-```ruby
-0021_upcase_sentence.md
-```
-
-```vim
-#using regex substitution
-:%s/\(^\|\.\s\+\)\(\w\+ \)\(\w\+\)/\1\2\U\3/g
-```
-
-- :             - command mode
-- %             - whole file
-- s             - substitute
-- \(^\|\.\s\+\) - Either beginning of line OR '.' followed by 1 or more whitespace
-- \(^\w\+ \)    - match beginning of line followed by 1 or more word characters and a space
-- \(^\w\+\)     - match beginning of line followed by 1 or more word characters
-- \1            - begging or full stop + whitespace
-- \2            - 1st word
-- \U\3          - uppercase 2nd word
-
-
-# Ancient Scroll # 3: Formulate
-Uppercase the 2nd word of every sentence
-
-```ruby
-0021_upcase_sentence.md
-```
-
-```vim
-#using macros
-ggqqwve~)q25@q
-```
-
-- gg    - go to top of file
-- q     - record macro
-- q     - assign macro to q
-- w     - go to next word
-- v     - enter visual mode
-- e     - select to end of word
-- ~     - toggle case
-- )     - go to next sentence
-- q     - finish macro
-- 25@q  - execute macro 25 times
-
-
-# Ancient Scroll # 3: Formulate
+(Fendy)
 Pretty Print Json (Using an external program)
 
 ```ruby
@@ -438,6 +344,7 @@ Note: python -m json.tool is installed
 
 
 # Ancient Scroll # 3: Formulate
+(Fendy)
 Pretty Print Json (Using an external program)
 
 ```ruby
@@ -450,6 +357,7 @@ Pretty Print Json (Using an external program)
 
 
 # Ancient Scroll # 3: Formulate
+(Fendy)
 How to do internationalisation / localisation
 
 ```sh
@@ -464,6 +372,7 @@ visual select
 
 
 # Ancient Scroll # 4: Navigate
+(Fendy)
 using tags
 
 ```sh
@@ -478,6 +387,7 @@ ctags -R *
 
 
 # Ancient Scroll #4: Navigate
+(Fendy)
 Ctrl - O is your friend
 
 ```vim
@@ -488,6 +398,7 @@ Ctrl - O is your friend
 
 
 # Ancient Scroll # 4: Navigate
+(Fendy)
 Using cscope (starscope)
 
 ```sh
@@ -504,6 +415,7 @@ vim lib/treetop/compiler/metagrammar.rb
 
 
 # Ancient Scroll # 5: Reflect
+(Fendy)
 What we discussed:
 
 Meditate - vim setups
